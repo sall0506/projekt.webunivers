@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tilmeldingsside - Pole Fitness</title>
+    <link rel="stylesheet" href="style.css"> 
+  
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tilmeld dig Pole Fitness</h1>
+        <form action="#">
+            <div class="cpr-field">
+                <div>
+                    <label for="cpr1">CPR-nummer (Fødselsdato) *</label>
+                    <input type="text" id="cpr1" name="cpr1" placeholder="DDMMÅÅ" required>
+                </div>
+                <div>
+                    <label for="cpr2">(4 sidste) *</label>
+                    <input type="text" id="cpr2" name="cpr2" placeholder="XXXX" required>
+                </div>
+            </div>
+            <label for="navn">Fulde navn *</label>
+            <input type="text" id="navn" name="navn" required>
+
+            <label for="adresse">Adresse *</label>
+            <input type="text" id="adresse" name="adresse" required>
+
+            <div class="small-input">
+                <label for="postnr">Postnr. *</label>
+                <input type="text" id="postnr" name="postnr" required>
+            </div>
+            <div class="small-input">
+                <label for="by">By *</label>
+                <input type="text" id="by" name="by" required>
+            </div>
+            <div class="small-input">
+                <label for="land">Land</label>
+                <input type="text" id="land" name="land">
+            </div>
+
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefon">Telefon</label>
+            <input type="tel" id="telefon" name="telefon">
+
+            <div class="checkbox">
+                <input type="checkbox" id="nyhedsbrev" name="nyhedsbrev">
+                <label for="nyhedsbrev">Modtag nyhedsbrev</label>
+            </div>
+
+            <label for="kommentar">Kommentar:</label>
+            <textarea id="kommentar" name="kommentar"></textarea>
+
+            <button type="submit">Tilmeld</button>
+        
+            <button onclick="window.location.href='index.html'" style="margin-top: 20px; padding: 10px; background-color: #ccc; color: #000; border: none; border-radius: 5px; cursor: pointer;">Tilbage til forsiden</button>
+        </form>
+    </div>
+</body>
+</html>
